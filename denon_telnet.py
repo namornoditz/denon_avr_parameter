@@ -27,7 +27,7 @@ def getresponse(parameter,val):
     #telnet connect, send, wait for response
     try:
         #device
-        HOST = "192.168.31.44"
+        HOST = "192.168.xx.yy"
         PORT = 23
         #open connection
         telnet = telnetlib.Telnet(HOST,PORT)
