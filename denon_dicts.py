@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 #denon_avr_parameter v0.9
-#namor_noditz@hkv.de 2023-05-12
+#namornoditz 2023-05-12
 
 
 modedict =	{
