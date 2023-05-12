@@ -11,7 +11,7 @@ from Denon AVRs and return them friendly formated to HA.
 ## Features
 
 It is more then just send command and forward responses to HA.
-Several parameters must be formated, some used system parameters are not included in the official documention and the <output channel layout> parameter must be derived from a set of CV-parameters for a nice presentation.
+Several parameters must be formated, some used system parameters are not included in the official documention and the "output channel layout" parameter must be derived from a set of CV-parameters for a nice presentation.
   
 ## Screenshots
   
