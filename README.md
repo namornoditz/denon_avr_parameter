@@ -15,7 +15,9 @@ Several parameters must be formated, some used system parameters are not include
   
 ## Screenshots
   
-  ![Alt text](/screenshot#3.png .jpg?raw=true "Optional Title")
+![Alt text](screenshot%233.png?raw=true "Screenshot #3")
+![Alt text](screenshot%232.png?raw=true "Screenshot #2")
+![Alt text](screenshot%231.png?raw=true "Screenshot #1")
 
 ## Installation
 
