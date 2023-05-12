@@ -49,10 +49,6 @@ Reference
 -10.0
 ```
 
-  
-## Collection of HTTP calls
-For a collection of HTTP calls for Denon receivers please have a look at the `doc` folder.
-
 ## License
 MIT
 
