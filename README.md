@@ -2,8 +2,8 @@
 #### Get all and more parameters from Denon AVRs and use it in Home Assistant.
 
 A set of python scripts to query (pull)
-- documented parameters, 
-- system paramters and 
+- documented parameters (FY21AVR_DENON_PROTOCOL_V02_04062020.xlsx)
+- additional system parameters and 
 - derived parameters 
 
 from Denon AVRs and return them friendly formated to HA.
@@ -21,7 +21,7 @@ Several parameters must be formated, some used system parameters are not include
 
 ## Installation
 
-1. Create a a folder <python_scripts> in your HA config folder.
+1. Create a folder <python_scripts> in your HA config folder.
 2. Copy all python scripts to that folder.
 3. Add sensors to your HA <configuration.yaml>. 
 In <denon_example_configuration.yaml> you find examples for command_line sensors.
@@ -60,5 +60,5 @@ MIT
 
 ## Links
 Home Assistant: https://github.com/home-assistant/home-assistant/  
-denonavr-cli: https://pypi.org/project/denonavr-cli/
-denonavr: https://github.com/ol-iver/denonavr
+denonavr-cli: https://pypi.org/project/denonavr-cli/  
+denonavr: https://github.com/ol-iver/denonavr/
