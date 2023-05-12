@@ -1,0 +1,169 @@
+#denon_avr_parameter v0.9
+#namor_noditz@hkv.de 2023-05-12
+
+sensor:
+  #DENON AVR - python3 /config/python_scripts/denon_extsensors.py
+  #Name
+  - platform: command_line
+    name: "denon_ext_videoinout"
+    unique_id: denon_ext_VideoInOutStr
+    command: python3 /config/python_scripts/denon_extsensors.py "VideoInOutStr"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  - platform: command_line
+    name: "denon_ext_audioinout"
+    unique_id: denon_ext_AudioInOutStr
+    command: python3 /config/python_scripts/denon_extsensors.py "AudioInOutStr"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  - platform: command_line
+    name: "denon_ext_audioin"
+    unique_id: denon_ext_AudioInputStr
+    command: python3 /config/python_scripts/denon_extsensors.py "AudioInputStr"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  - platform: command_line
+    name: "denon_ext_audioout"
+    unique_id: denon_ext_AudioOutputStr
+    command: python3 /config/python_scripts/denon_extsensors.py "AudioOutputStr"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  #DENON AVR - /config/python_scripts/denon_telnet.py
+  #Name
+  - platform: command_line
+    name: "denon_avrname"
+    unique_id: denon_NSFRN
+    command: python3 /config/python_scripts/denon_telnet.py "NSFRN " "?"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  #Quick / Presets
+  - platform: command_line
+    name: "denon_quick"
+    unique_id: denon_MSQUICK
+    command: python3 /config/python_scripts/denon_telnet.py "MSQUICK" " ?"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  - platform: command_line
+    name: "denon_speaker_preset"
+    unique_id: denon_SPPR
+    command: python3 /config/python_scripts/denon_telnet.py "SPPR " "?"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  #Input
+  - platform: command_line
+    name: "denon_signal_input"
+    unique_id: denon_SI
+    command: python3 /config/python_scripts/denon_telnet.py "SI" "?"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  - platform: command_line
+    name: "denon_video_input"
+    unique_id: denon_SV
+    command: python3 /config/python_scripts/denon_telnet.py "SV" "?"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  #Audio
+  - platform: command_line
+    name: "denon_audio_input_layout"
+    unique_id: denon_SSINFAISFOR
+    command: python3 /config/python_scripts/denon_telnet.py "SSINFAISFOR " "?"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  - platform: command_line
+    name: "denon_audio_input_format"
+    unique_id: denon_SYSDA
+    command: python3 /config/python_scripts/denon_telnet.py "SYSDA " "?"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  - platform: command_line
+    name: "denon_audio_output_layout"
+    unique_id: denon_SSOUTFAISFOR
+    command: python3 /config/python_scripts/denon_telnet.py "SSOUTFAISFOR " "?"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  - platform: command_line
+    name: "denon_audio_output_format"
+    unique_id: denon_SYSMI
+    command: python3 /config/python_scripts/denon_telnet.py "SYSMI " "?"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  - platform: command_line
+    name: "denon_audio_output_mode"
+    unique_id: denon_SSSMG
+    command: python3 /config/python_scripts/denon_telnet.py "SSSMG " "?"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  - platform: command_line
+    name: "denon_audio_delay"
+    unique_id: denon_PSDELAY
+    command: python3 /config/python_scripts/denon_telnet.py "PSDELAY " "?"
+    value_template: "{{ value }}"
+    unit_of_measurement: "ms"
+    scan_interval: 60
+
+  - platform: command_line
+    name: "denon_main_volume"
+    unique_id: denon_MV
+    command: python3 /config/python_scripts/denon_telnet.py "MV" "?"
+    value_template: "{{ value }}"
+    unit_of_measurement: "dB"
+    scan_interval: 60
+
+  #Video Info
+  - platform: command_line
+    name: "denon_video_input_format"
+    unique_id: denon_SYSDVIN
+    command: python3 /config/python_scripts/denon_telnet.py "SYSDVIN " "?"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  - platform: command_line
+    name: "denon_video_output_format"
+    unique_id: denon_SYSDVOUT
+    command: python3 /config/python_scripts/denon_telnet.py "SYSDVOUT " "?"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  #Audyssey
+  - platform: command_line
+    name: "denon_multeq"
+    unique_id: denon_PSMULTEQ
+    command: python3 /config/python_scripts/denon_telnet.py "PSMULTEQ:" " ?"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  #AuroMatic
+  - platform: command_line
+    name: "denon_auro_3dpreset"
+    unique_id: denon_PSAUROPR
+    command: python3 /config/python_scripts/denon_telnet.py "PSAUROPR " "?"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  - platform: command_line
+    name: "denon_auro_3dstrength"
+    unique_id: denon_PSAUROST
+    command: python3 /config/python_scripts/denon_telnet.py "PSAUROST " "?"
+    value_template: "{{ value }}"
+    scan_interval: 60
+
+  - platform: command_line
+    name: "denon_auro_mode"
+    unique_id: denon_PSAUROMODE
+    command: python3 /config/python_scripts/denon_telnet.py "PSAUROMODE " "?"
+    value_template: "{{ value }}"
+    scan_interval: 60
