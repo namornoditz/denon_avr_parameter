@@ -48,3 +48,21 @@ Reference
 >python3 /config/python_scripts/denon_telnet.py "MV" "70"
 -10.0
 ```
+
+  
+## Collection of HTTP calls
+For a collection of HTTP calls for Denon receivers please have a look at the `doc` folder.
+
+## License
+MIT
+
+## Author
+@namornoditz: https://github.com/namornoditz
+
+## Contributors
+...
+
+## Links
+Home Assistant: https://github.com/home-assistant/home-assistant/  
+denonavr-cli: https://pypi.org/project/denonavr-cli/
+denonavr: https://github.com/ol-iver/denonavr
